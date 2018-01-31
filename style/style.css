@@ -86,7 +86,7 @@ body {
   transform: rotate(26deg);
   background-color: white;
   opacity: 0;
-  transition: opacity 1s ease-in-out;
+  transition: opacity .9s ease-in-out;
 }
 .col-4 {
   cursor: pointer;
