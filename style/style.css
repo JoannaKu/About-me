@@ -83,12 +83,13 @@ body {
   width: 250px;
   position: absolute;
   z-index: 1;
-  display: none;
   transform: rotate(26deg);
   background-color: white;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 .col-4 {
-  transition-duration: 0.5s;
+  cursor: pointer;
 }
 .layer1, .layer2, .layer3, .layer4 {
   height: 400px;
@@ -96,7 +97,7 @@ body {
   opacity: 0.3;
 }
 .col-4:hover .layer {
-  display: block;
+  opacity: 1;
   height: 400px;
   width: 400px;
   transform: rotate(0deg);
@@ -131,4 +132,5 @@ body {
   position: absolute;
   top: 0;
   padding: 30px;
+  transition: all .5s ease-in-out;
 }
