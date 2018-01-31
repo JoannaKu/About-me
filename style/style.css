@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+* {
+	box-sizing: border-box;	
+}
+.row {
+  margin: 100px 0;
+}
+.row:before,
+.row:after {
+	content: " ";
+	display: table;
+}
+.row:after {
+	clear: both;	
+}
+body {
+	margin: 0;
+  background-color: #fafafa;
+}
+.container {
+	margin: 0 auto;
+	max-width: 1200px;
+	width: 100%;
+}
+.col-3 {
+  width: 25%;
+}
+[class*="col-"] {
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* ABOUT ME */
+.about-me {
+  text-align: center;
+  margin: 0 70px 0 70px;
+  position: relative;
+}
+.about-me h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  padding-top: 40px;
+  border-bottom: 2px solid #f0f0f0;
+  width: 800px;
+  padding-bottom: 10px;
+  margin: 0 auto;
+}
+.about-me h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: #7b7e83;
+  margin-top: 30px;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+  margin-left: 100%;
+  width: 300%; 
+  }
+  to {
+  margin-left: 0%;
+  width: 100%;
+  }
+}
+.picture {
+  height: 250px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
+  margin: 25px;
+  transform: rotate(26deg);
+}
+.layer {
+  height: 250px;
+  width: 250px;
+  position: absolute;
+  z-index: 1;
+  display: none;
+  transform: rotate(26deg);
+  background-color: white;
+}
+.col-4 {
+  transition-duration: 0.5s;
+}
+.layer1, .layer2, .layer3, .layer4 {
+  height: 400px;
+  width: 400px;
+  opacity: 0.3;
+}
+.col-4:hover .layer {
+  display: block;
+  height: 400px;
+  width: 400px;
+  transform: rotate(0deg);
+}
+.information h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  position: absolute;
+  margin: 0;
+}
+.picture1, .layer1  {
+  background: url(../images/picture1.jpg) center no-repeat;
+  background-size: cover;
+}
+.picture2, .layer2 {
+  background: url(../images/picture2.jpg) center no-repeat;
+  background-size: cover;
+}
+.picture3, .layer3 {
+  background: url(../images/picture3.jpg) center no-repeat;
+  background-size: cover;
+}
+.picture4, .layer4 {
+  background: url(../images/picture4.jpg) center no-repeat;
+  background-size: cover;
+}
+.layer h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  position: absolute;
+  top: 0;
+  padding: 30px;
+}
